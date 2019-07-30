@@ -1,0 +1,149 @@
+Index: DAY04/src/day04/day04_01_Array.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/src/day04/day04_01_Array.java	(date 1564283118830)
++++ DAY04/src/day04/day04_01_Array.java	(date 1564283118830)
+@@ -0,0 +1,11 @@
++package day04;
++
++public class day04_01_Array {
++    /*
++    数组:是一种用于存储多个相同类型数据的存储模型
++     */
++    public static void main(String[] args) {
++        int[] arr=new int[2];
++        System.out.println(arr);
++    }
++}
+Index: DAY04/src/day04/day04_04_MaxNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/src/day04/day04_04_MaxNumber.java	(date 1564283118934)
++++ DAY04/src/day04/day04_04_MaxNumber.java	(date 1564283118934)
+@@ -0,0 +1,20 @@
++package day04;
++
++//输出数组中的最大值
++public class day04_04_MaxNumber {
++    public static void main(String[] args) {
++        int[] arr = {14,52,82,42,11,5,62,88,48,12,54,848,1,84};
++        //1.定义一个变量max用来存贮最大值
++        int max = arr[0];
++        //3.循环
++        for (int i = 1; i <arr.length ; i++) {
++            //2.比较
++            if (arr[i]>max){
++                max = arr[i];
++            }
++        }
++
++        System.out.println(max);
++    }
++
++}
+Index: DAY04/DAY04.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/DAY04.iml	(date 1564196415765)
++++ DAY04/DAY04.iml	(date 1564196415765)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: DAY04/src/day04/day04_03_ergodic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/src/day04/day04_03_ergodic.java	(date 1564283118691)
++++ DAY04/src/day04/day04_03_ergodic.java	(date 1564283118691)
+@@ -0,0 +1,11 @@
++package day04;
++
++//遍历:获取数组中的每一个元素输出在控制台
++public class day04_03_ergodic {
++    public static void main(String[] args) {
++        int[] arr = {10,20,30,40,50,60,70,80};
++        for (int i =0;i<arr.length;i++ ){
++            System.out.println(arr[i]);
++        }
++    }
++}
+Index: DAY04/src/day04/day04_02_staticArray.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/src/day04/day04_02_staticArray.java	(date 1564283118770)
++++ DAY04/src/day04/day04_02_staticArray.java	(date 1564283118770)
+@@ -0,0 +1,11 @@
++package day04;
++
++public class day04_02_staticArray {
++    public static void main(String[] args) {
++        int[] arr = {1, 2, 3};
++        System.out.println(arr);
++        System.out.println(arr[0]);
++        System.out.println(arr[1]);
++        System.out.println(arr[2]);
++    }
++}
+Index: DAY04/src/day04/day04_00_practice.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DAY04/src/day04/day04_00_practice.java	(date 1564283118893)
++++ DAY04/src/day04/day04_00_practice.java	(date 1564283118893)
+@@ -0,0 +1,36 @@
++package day04;
++
++public class day04_00_practice {
++    public static void main(String[] args) {
++        int[] arr = {12, 14, 25, 8, 2, 62, 22};
++        ergodic(arr);
++        int number = getMax(arr);
++        System.out.println("最大值是:"+number);
++    }
++
++    public static void ergodic(int[] arr) {
++
++        for (int i = 0; i < arr.length; i++) {
++            System.out.println(arr[i]);
++        }
++    }
++
++    //获取数组中的最大值
++    /*
++       两个明确:
++       返回值类型: int
++       参数: int[] arr
++     */
++
++    public static int getMax(int[] arr) {
++        int max = arr[0];
++        for (int i = 1; i < arr.length; i++) {
++            if (max < arr[i]) {
++                max = arr[i];
++            }
++        }
++        return max;
++    }
++
++
++}
