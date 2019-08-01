@@ -32,7 +32,7 @@ public class day06_07_chazhao {
 public static void chazhaotwo(){
 
         //定义一个数组
-        int[] arr2 = {12,52,92,82,888,366,666};
+        int[] arr2 = {12,52,92,82,888,366,666,666};
         int a= -1;
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();

@@ -14,6 +14,7 @@ import java.util.Scanner;
         5:定义方法实现获取数组中的最低分(数组最小值) ，调用方法
        6:定义方法实现获取数组中的所有元素的和(数组元素求和) ，调用方法
 
+
  */
 public class day06_09_pingweidafen {
     public static void main(String[] args) {
